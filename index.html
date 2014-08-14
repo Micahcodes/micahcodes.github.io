@@ -15,7 +15,7 @@
 		CSS & Fonts
 		=============================================== -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/flexslider.css">
 		<link rel="stylesheet" href="css/meflat-light-green.css">
 
@@ -36,6 +36,11 @@
 	</head>
 
 	<body data-spy="scroll" data-target="#main-nav" data-offset="400">
+		<!--[if lt IE 9]>
+        <p class="browsehappy">If IE 8 is your preferred browser, I don't think we are meant to be together. It's not you, it's your browser! If you don't mind updating to the <a href="http://browsehappy.com">latest version</a> to improve your experience, then I think we can work it out and be friends.</p>
+        <![endif]
+      -->
+
 		<!-- ==============================================
 		MAIN NAV
 		=============================================== -->
@@ -59,7 +64,7 @@
 							<a href="#services" class="scrollto">What I Do</a>
 						</li>
 						<li>
-							<a href="#about" class="scrollto">About Me</a>
+							<a href="#feat-project" class="scrollto">My Work</a>
 						</li>
 						<li id="logo">
 							<a href="#home" class="scrollto">
@@ -67,7 +72,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#feat-project" class="scrollto">My Work</a>
+							<a href="#about" class="scrollto">About Me</a>
 						</li>
 						<li>
 							<a href="#contact" class="scrollto">Contact Me</a>
@@ -97,17 +102,17 @@
 
 					<div class="col-sm-6">
 						<div class="imac-frame">
-							<img class="img-responsive img-center" src="assets/imac.png" alt=""/>
+							<img class="img-responsive img-center" src="assets/imac.png" alt="iMac"/>
 							<div class="imac-screen flexslider">
 								<ul class="slides">
 									<li>
-										<img src="assets/img-top-coding.jpg" alt=""/>
+										<img src="assets/img-top-coding.jpg" alt="Coding"/>
 									</li>
 									<li>
-										<img src="assets/img-top-sublime.png" alt=""/>
+										<img src="assets/img-top-sublime.png" alt="Sublime"/>
 									</li>
 									<li>
-										<img src="assets/img-top-webdev.png" alt=""/>
+										<img src="assets/img-top-webdev.png" alt="Web Developer"/>
 									</li>
 								</ul>
 							</div>
@@ -124,67 +129,244 @@
 		SERVICES
 		=============================================== -->
 		<section id="services" class="white-bg padding-top-bottom">
+			<div class="container">
+				<header class="section-header text-center">
+					<h1 class="scrollimation scale-in">What I Do</h1>
+					<p>I like to build web apps that solve a problem.</p>
+				</header>
+				<div class="row services">
+					<div class="col-md-3 col-sm-6 item scrollimation fade-up">
+						<div class="icon">
+							<img class="img-responsive img-center" src="assets/service1.png" alt="Web Design" />
+						</div>
+		        <h2>Web Design</h2>
+		        <p>I am a coder first, but I have a design fetish. I love paying attention to the UX and focusing on adding subtle design elements that engage my audience.
+		        </p>
+		      </div>
+		      <div class="col-md-3 col-sm-6 item scrollimation fade-up d1">
+		        <div class="icon">
+		          <img class="img-responsive img-center" src="assets/service2.png" alt="Web Development" />
+		        </div>
+		        <h2>Web Development</h2>
+		        <p>A full Front End knowledge using HTML, CSS, and JavaScript. PSD's don't stand a chance. Complimented by enough RoR/SQL to be dangerouse in the backend.</p>
+		      </div>
+		      <div class="col-md-3 col-sm-6 item scrollimation fade-up d2">
+		        <div class="icon">
+		          <img class="img-responsive img-center img-size" src="assets/service3.png" alt="Responsive Websites" />
+		        </div>
+		        <h2>Responsive</h2>
+		        <p>Don't forget the little guys. Experience in desktop retrofits or mobile first overhauls from the ground up.</p>
+		      </div>
+		      <div class="col-md-3 col-sm-6 item scrollimation fade-up d3">
+		        <div class="icon">
+		          <img class="img-responsive img-center img-size" src="assets/service4.png" alt="Always Learn" />
+		        </div>
+		        <h2>Learn</h2>
+		        <p>Angular, Node, PHP, Woodworking, Home Remodeling. Life is too short to not be constantly absorbing all the things.
+		        </p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+ 		<!-- ==============================================
+		PORTFOLIO
+		=============================================== -->
+		<section id="portfolio" class="gray-bg padding-top-bottom">
 
 			<div class="container">
 
 				<header class="section-header text-center">
 
-					<h1 class="scrollimation scale-in">What I Do</h1>
-					<p>I like to build web apps that solve a problem.</p>
+					<h1 class="scrollimation scale-in">My Works</h1>
+					<p>Full Web Apps, Responsive Websites, Banner Ads, and Email Campaigns<br/> I put a lot of emphasis on planning out each project.</p>
 
 				</header>
 
-				<div class="row services">
+			</div><!--End portfolio header -->
 
-					<div class="col-md-3 col-sm-6 item scrollimation fade-up">
+			<div class="container masonry-wrapper scrollimation fade-in">
 
-						<div class="icon">
-							<img class="img-responsive img-center" src="assets/service1.png" alt="" />
+				<div id="projects-container">
+
+					<!-- ==============================================
+					SINGLE PROJECT ITEMS
+					=============================================== -->
+					<article class="project-item web-design">
+
+						<img class="img-responsive project-image" src="assets/wireframe1.gif"  alt="Banner ad sketch"><!--Project thumb -->
+
+						<div class="hover-mask">
+							<h2 class="project-title">Thoughtful Planning</h2><!--Project Title -->
+							<p>My cocktail napkin wireframes</p><!--Project Subtitle -->
 						</div>
 
-						<h2>Web Design</h2>
-						<p>A full Front End knowledge using HTML, CSS, and JavaScript to design steller web applications with attention to user experience</p>
+						<!--==== Project Preview HTML ====-->
 
-					</div>
+						<div class="sr-only project-description"
+							data-category="Planning"
+							data-images="assets/wireframe1-big.gif,assets/wireframe2-big.gif,assets/wireframe3-big.gif"
+						>
+							<p>A lot of time is wasted refactoring code that can be avoided when you plan out your structure.</p>
 
-					<div class="col-md-3 col-sm-6 item scrollimation fade-up d1">
+							<p>I alway start a project off by sketching out the layout and then wirframing the structure. Special attention is paid to the items that will be breaking down into a single column view for mobile. These items must be structured in a way that allows the manipulation of them together on desktop, and then separate when the screen size drops to mobile.</p>
+							<p>These are some of the sketches for my latest projects</p>
+						</div>
+					</article>
+					<!-- ==============================================
+					END PROJECT ITEM
+					=============================================== -->
 
-						<div class="icon">
-							<img class="img-responsive img-center" src="assets/service2.png" alt="" />
+					<article class="project-item icons">
+
+						<img class="img-responsive project-image" src="assets/hpt-sitelet-small.jpg"  alt="HPT Sitelet"><!--Project thumb -->
+
+						<div class="hover-mask">
+							<h2 class="project-title">Schwab Trading sitelets</h2><!--Project Title -->
+							<p>New Responsive Trading Pages</p><!--Project Subtitle -->
 						</div>
 
-						<h2>Web Development</h2>
-						<p>Utilizing Ruby on Rails and SQLite/PostgreSQL to program the interactions with the pages and tap into the database</p>
+						<!--==== Project Preview HTML ====-->
 
-					</div>
+						<div class="sr-only project-description"
+							data-category="Responsive"
+							data-date="06/14"
+							data-client="Charles Schwab"
+							data-link="http://activetrader.schwab.com/trading-services/master/default.aspx"
+							data-descr="New Responsive Trading Pages"
+							data-images="assets/hpt-sitelet-big.jpg"
+						>
+							<p>Third Rail Creative provided an updated design for 9 pages. This was the first time our client developed responsive.</p>
 
-					<div class="col-md-3 col-sm-6 item scrollimation fade-up d2">
+							<p>My first project with Third Rail. They did a great job on the design! I was the lone developer to bring the PSD's to life. We focused on 4 media break points to size it down for different viewing experiences.</p>
+							<p>We were bound by tying in to the old code and frameworks. This was not a ground up project. The first drafts had fairly large file sizes and beastly stylesheets as a result. I grouped as many assets and code into global folders as I could and compressed the images to minimize load times for the user. We ended up with a total project at half the size as the first draft.</p>
+							<p class="text-right"><a class="btn btn-meflat icon-right" href="http://activetrader.schwab.com/trading-services/master/default.aspx">Visit Website<i class="fa fa-arrow-right"></i></a></p>
+						</div>
+					</article>
+					<!-- ==============================================
+					END PROJECT ITEM
+					=============================================== -->
 
-						<div class="icon">
-							<img class="img-responsive img-center img-size" src="assets/service3.png" alt="" />
+					<article class="project-item web-design">
+
+						<img class="img-responsive project-image" src="assets/banner-small.jpg"  alt="Banner ads"><!--Project thumb -->
+
+						<div class="hover-mask">
+							<h2 class="project-title">Banner ads</h2><!--Project Title -->
+							<p>Google ads through DoubleClick</p><!--Project Subtitle -->
 						</div>
 
-						<h2>Responsive</h2>
-						<p>Experience writing custom media queries and working with a mobile first grid layout</p>
+						<!--==== Project Preview HTML ====-->
 
-					</div>
+						<div class="sr-only project-description"
+							data-category="banners"
+							data-date="08/14"
+							data-client="Schwab"
+							data-descr="Banner advertisements"
+							data-images="assets/banners-big.jpg"
+						>
+							<p>This was a tough project for 2 reasons.</p>
+							<p>The overall file size had to be kept under 40Kb. That meant no jquery or frameworks. I had to write all of the click events in vanilla Javascript and was limited to CSS animations. It also meant limited assets. I had to investigate the best ways to compress image assets with lossless quality.</p>
+							<p>The other reason it was tough was that I had to abandon my beloved development environment and create these in Google Web Developer. Altogether not a bad program, but it was unfamiliar. The generated files are then published to DoubleClick Studios and sent to the advertising agency.</p>
+							<p>I'm glad to have had this challenge that helped me gain the experience to develop HTML/CSS/JS content in an extremely tight way.</p>
+						</div>
+					</article>
+					<!-- ==============================================
+					END PROJECT ITEM
+					=============================================== -->
 
-					<div class="col-md-3 col-sm-6 item scrollimation fade-up d3">
+					<article class="project-item icons">
 
-						<div class="icon">
-							<img class="img-responsive img-center img-size" src="assets/service4.png" alt="" />
+						<img class="img-responsive project-image" src="assets/dare-small.jpg"  alt="We Dare You"><!--Project thumb -->
+
+						<div class="hover-mask">
+							<h2 class="project-title">We Dare You</h2><!--Project Title -->
+							<p>MakerSquare Final Project</p><!--Project Subtitle -->
 						</div>
 
-						<h2>Learn</h2>
-						<p>Angular, Node, PHP, Woodworking, Home Remodeling. Life is too short to not be constantly absorbing all the things.</p>
+						<!--==== Project Preview HTML ====-->
 
-					</div>
+						<div class="sr-only project-description"
+							data-category="Webapp"
+							data-date="05/14"
+							data-client="Myself"
+							data-link="http://we-dare-you.herokuapp.com/"
+							data-descr="A place for crowdfunding dares, challenges, or charitable acts"
+							data-images="assets/dare-big.jpg"
+						>
+							<p>This is a fully functional web application with a carefully designed front end experience coupled with a fully functional back end. You can navigate the flowing tiles displaying user generated content, or create your own and make contributions.</p>
 
-				</div>
+							<p>See the featured project just below for more information.</p>
+							<p class="text-right"><a class="btn btn-meflat icon-right" href="http://we-dare-you.herokuapp.com/">Visit Website<i class="fa fa-arrow-right"></i></a></p>
+						</div>
 
-			</div>
+					</article>
+					<!-- ==============================================
+					END PROJECT ITEM
+					=============================================== -->
+
+				</div><!-- End projects -->
+
+			</div><!-- End container -->
+
+			<!-- ==============================================
+			PROJECT PREVIEW MODAL (Do not alter this markup)
+			=============================================== -->
+			<div id="project-modal" class="modal fade">
+
+				<div class="modal-dialog">
+
+					<div class="modal-content">
+
+						<div class="modal-header">
+
+							<div class="container">
+
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+								<h1 id="hdr-title" class="text-center"></h1>
+								<div class="row">
+									<div class="col-md-8 col-md-offset-2">
+										<div class="image-wrapper">
+											<img class="img-responsive" src="assets/chrome.png" alt="Chrome">
+											<div class="loader"></div>
+											<div class="screen"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="modal-body">
+							<div class="container">
+								<div class="row">
+									<div id="project-sidebar" class="col-md-3">
+										<h2 id="sdbr-title"></h2>
+										<p id="sdbr-category"></p>
+										<p id="sdbr-date"></p>
+										<p id="sdbr-client"></p>
+										<p id="sdbr-link"><a href="#link" target="_blank"></a></p>
+										<p id="sdbr-descr"></p>
+									</div>
+									<div id="project-content" class="col-md-8 col-md-offset-1">
+									</div>
+								</div>
+
+							</div>
+						</div><!-- End modal-body -->
+
+					</div><!-- End modal-content -->
+
+				</div><!-- End modal-dialog -->
+
+			</div><!-- End modal -->
 
 		</section>
+
+
+
 
 		<!-- ==============================================
 		FEATURED PROJECT
@@ -197,16 +379,19 @@
 
 					<h1 class="scrollimation scale-in">Featured Project</h1>
 					<h3>We Dare You</h3>
-					<p>A place for crowdfunding dares, challenges, or charitably acts.
+					<p>A place for crowdfunding dares, challenges, or charitable acts.
 
 				</header>
 
 				<div class="scrollimation fade-up">
 					<div class="img-wrapper">
 
-						<img class="img-responsive img-center" src="assets/dare-macbook.png" alt="" />
+						<img class="img-responsive img-center" src="assets/dare-macbook.png" alt="We Dare You Website" />
 
-						<p class="text-center on-hover"><a class="btn btn-meflat icon-right" href="we-dare-you.herokuapp.com">Visit Website<i class="fa fa-arrow-right"></i></a></p>
+						<p class="text-center on-hover">
+							<a class="btn btn-meflat icon-right" href="http://we-dare-you.herokuapp.com" target="_blank">Visit Website<i class="fa fa-arrow-right"></i></a><br>
+							<a class="btn btn-meflat icon-right" href="assets/we-dare-you.pdf" download="dare-app.pdf">Summary Sheet<i class="fa fa-arrow-right"></i></a>
+						</p>
 
 					</div>
 				</div>
@@ -233,7 +418,7 @@
 
 					<div class="col-sm-8 col-sm-offset-2">
 
-						<img class="img-responsive img-center img-big-size scrollimation fade-left" src="assets/laurenmicah-0020.png" alt="" />
+						<img class="img-responsive img-center img-big-size scrollimation fade-left" src="assets/laurenmicah-0020.png" alt="Me!" />
 
 						<p class="text-center scrollimation fade-in">I was nerdy before the hipsters made it ironic.  A lifelong tech junkie and early adopter. I also love building things with my hands, anything outdoors, and bean bag toss.</p>
 
@@ -258,7 +443,7 @@
 					<h1 class="text-center scrollimation fade-in">I Got the Skills</h1>
 
 					<div class="col-sm-6 col-md-3 text-center">
-						<span class="chart" data-percent="80"><span class="percent">80</span></span>
+						<span class="chart" data-percent="80"><span class="percent">89.5</span></span>
 						<h2 class="text-center">HTML / CSS</h2>
 					</div>
 					<div class="col-sm-6 col-md-3 text-center">
@@ -270,7 +455,7 @@
 						<h2 class="text-center">SQLite / PostgreSQL</h2>
 					</div>
 					<div class="col-sm-6 col-md-3 text-center">
-						<span class="chart" data-percent="90"><span class="percent">90</span></span>
+						<span class="chart" data-percent="90"><span class="percent">75</span></span>
 						<h2 class="text-center">Ruby on Rails</h2>
 					</div>
 
@@ -294,9 +479,9 @@
 
 					<div class="row col-centered">
 
-						<div class="col-sm-6 col-centered">
+						<div class="col-sm-12 col-centered">
 
-							<ul class="social-links text-center">
+							<ul class="social-links text-center col-centered">
 
 								<li class="scrollimation fade-right d4"><a href="https://twitter.com/Micahcodes"><i class="fa fa-twitter fa-fw"></i></a></li>
 
